@@ -10,9 +10,9 @@ right_index=k
 window_elements=[]
 maxround=0
 maxfinal=0
-for i in range(len(nums)):
-    for j in range(left_index,right_index+1,):
-        window_elements.append(j)
+for i in range(n-k+1):
+    for j in range(left_index,right_index,):
+        window_elements.append(nums[j])
     maxround=max(window_elements)
     maxfinal=max(maxfinal,maxround)
     left_index+=1
